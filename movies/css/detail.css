@@ -1,0 +1,119 @@
+/* 규선 상세페이지 css */
+
+body{
+    background: white;
+}
+
+
+/* 이미지 */
+.custom-height{
+    height: 65vh; /* 높이를 뷰포트 높이의 25%로 설정합니다. */
+    object-fit: contain; /* 이미지가 컨테이너를 채우면서 비율을 유지합니다. */
+    width:100%;
+}
+
+/* 이미지 안 CSS */
+.background-image {
+    position: relative; /* position 속성 추가 */
+    z-index: 0;
+}
+
+/* 이미지 안 TEXT CSS */
+.in-image-text {
+    position: relative; /* position 속성 추가 */
+    z-index: 1;
+    margin-top:500px;
+    margin-left:100px;
+}
+
+button {
+    z-index:2;
+}
+
+
+/* 여기 줄거리 */
+.content{
+    background-color: black;
+}
+
+.summary{
+    color : white;
+}
+
+#summary-title{
+    background-color: #22242e;
+    color : grey;
+}
+
+
+#card-main{
+    display:flex;
+}
+
+/* 평점 */
+.review{
+    height:300px;
+}
+
+/* text area*/
+.form-control{
+    border-radius: 10px;
+    font-size : 20px;
+}
+
+.review-list-all{
+    background-color: white;
+}
+
+.review-content{
+    background-color: #f8f9fa;
+    color: black;
+}
+
+
+
+
+
+/* 동현님 css */
+
+.navbar-container {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.topNavbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LogoStyle {
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+
+.topNav {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.topNav li {
+    display: flex;
+    flex-direction:column;
+    padding: 1rem;
+
+}
+
+.topNav li img {
+    width: 30px;
+    height: 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
