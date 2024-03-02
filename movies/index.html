@@ -21,14 +21,17 @@
                     <ul class="topNav">
                        
                         <li class="log-in-icon"><a href="Login.html">
+                            <span id="userWelcomeMessage" class="user-welcome"></span>
+                            <span class="logingone">
                             <img 
                             src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png" 
-                            alt="로그인">
+                            alt="로그인" class="login-img">
                             <span> Log in </span>
-                            <span id="userWelcomeMessage" class="user-welcome"></span>
+                            </span>
                         </a>
                     </li>
                     <li><a href = "SignUp.html">
+                        <span class="signupgone"></span>
                         <img 
                         src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png" 
                         alt="회원가입">
@@ -83,7 +86,7 @@
                             </li>
                             <div class="search" role="search">
                                 <input class="search-input" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" onclick="search()">Search</button>
+                                <button class="btn" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button> 
                             </div>
                             <li class="nav-item">
                                 <a class="nav-link reserve 영화예매" href="reserve.html">영화예매</a>
@@ -110,7 +113,7 @@
                     <strong id="ctl00_PlaceHolderContent_AD_MOVIE_NM" class="movieSelection_title">아이엠 티라노</strong>
                     <span id="ctl00_PlaceHolderContent_AD_DESCRIPTION_NM" class="movieSelection_txt">점박이를 잇는 공룡 애니메이션<br>3월 1일 Cinema 21 극장 대개봉</span>
                     <div class="movieSelection_video_controller_wrap">
-                        <a href="http://ad.cgv.co.kr/click/CGV/CGV_201401/main@MovieSelection2021?ads_id%3d50927%26creative_id%3d76272%26click_id%3d97094%26content_series%3d%26event%3d" id="ctl00_PlaceHolderContent_AD_CLIP_DETAIL_URL" class="btn_movieSelection_detailView">상세보기</a>
+              
                         
                         <a href="#none" id="ctl00_PlaceHolderContent_playStop" class="btn_movieSelection_playStop">Stop</a>
                         <a href="#none" id="ctl00_PlaceHolderContent_soundOnOff" class="btn_movieSelection_soundOnOff">Sound On</a>
@@ -146,7 +149,7 @@
         <section class="container">
 
         <div class="slide-body">
-            <div style="overflow: hidden">
+            <div style="overflow:hidden">
                 <div class="movie1">
                     상영영화 공간
                 </div>
@@ -174,13 +177,13 @@
                 </div>
             </div>
         </nav>
-        <div class="movie2">
+        <div class="movie2 container">
             한국영화 및 외국영화 공간
         </div>
 
 <div>
     <div id="newsbanner">
-    <h5>News</h5></div>
+    <h5 class="newsnav">News</h5></div>
     <div class="container">
         <div class="row" id="news-container"></div>
         <div id="sliderControls">
@@ -235,6 +238,7 @@
     <script src='js/main.js'></script>
     <script src="js/main2.js"></script>
     <script src="js/main-movie-preview.js"></script>
+    <script src="https://kit.fontawesome.com/a1a9dc0480.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -4425,25 +4425,36 @@ function getDetail(){
   window.location.href ='detail2.html';
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const username = localStorage.getItem('userName');
+  const loginContainer = document.querySelector('.log-in-icon');
+  if (username) {
+    document.getElementById('userWelcomeMessage').textContent = username + '님 오신 것을 환영합니다';
+       userWelcomeMessage.style.cursor = 'default'; 
+      document.querySelector('.logingone').style.display = 'none';
+     
+     
+    } else {
 
+      document.querySelector('.logingone').style.display = '';
+     
 
-const navbar = document.getElementById("navbar");
-const navbarHeight = navbar.offsetHeight;
-let isNavbarFixed = false;
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50 && !isNavbarFixed) {
-      navbar.style.position = "fixed";
-      navbar.style.top = "0";
-      navbar.style.width = "100%";
-      navbar.style.zIndex = "1000"; // 네브바가 화면 최상단에 올 수 있도록 
-      document.body.style.paddingTop = `${navbarHeight}px`; 
-      isNavbarFixed = true;
-      navbar.classList.add("scrolled")
-  } else if (window.scrollY <= 50 && isNavbarFixed) {
-      navbar.style.position = "static";
-      document.body.style.paddingTop = "0";
-      isNavbarFixed = false;
-      navbar.classList.remove("scrolled");
   }
-});
+  } 
+);
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const username = localStorage.getItem('userName');
+//   if (username) {
+//       // 사용자 이름이 있을 경우 환영 메시지를 출력
+//       document.getElementById('userWelcomeMessage').textContent = username + '님 오신 것을 환영합니다';
+//        userWelcomeMessage.style.cursor = 'default'; 
+//       document.querySelector('.logingone').style.display = 'none';
+     
+//     } else {
+
+//       document.querySelector('.logingone').style.display = '';
+      
+
+//   }
+// });
